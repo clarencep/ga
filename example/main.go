@@ -35,4 +35,29 @@ func main() {
 
 		fmt.Printf("[%d]:\t result: %s\n", i, g.ResultAsString())
 	}
+
+	fmt.Printf("==== final result ====:\n")
+	result := g.Result()
+	fmt.Printf("Fitness: %v\n", result.Fitness)
+	fmt.Printf("Gene bits: %v\n", result.Bits)
+	fmt.Printf("Decoded gene: %v\n", result.Decoded)
+
 }
+
+// ============ OUTPUT: ==============
+// ...
+// [89]:    result: 24.855363 --  X.X.XXXX .XXXXX.X X -- 7.856726507007652
+// [90]:    result: 24.855363 --  X.X.XXXX .XXXXX.X X -- 7.856726507007652
+// [91]:    result: 24.855363 --  X.X.XXXX .XXXXX.X X -- 7.856726507007652
+// [92]:    result: 24.855363 --  X.X.XXXX .XXXXX.X X -- 7.856726507007652
+// [93]:    result: 24.855363 --  X.X.XXXX .XXXXX.X X -- 7.856726507007652
+// [94]:    result: 24.855363 --  X.X.XXXX .XXXXX.X X -- 7.856726507007652
+// [95]:    result: 24.855363 --  X.X.XXXX .XXXXX.X X -- 7.856726507007652
+// [96]:    result: 24.855363 --  X.X.XXXX .XXXXX.X X -- 7.856726507007652
+// [97]:    result: 24.855363 --  X.X.XXXX .XXXXX.X X -- 7.856726507007652
+// [98]:    result: 24.855363 --  X.X.XXXX .XXXXX.X X -- 7.856726507007652
+// [99]:    result: 24.855363 --  X.X.XXXX .XXXXX.X X -- 7.856726507007652
+// ==== final result ====:
+// Fitness: 24.85536281266667
+// Gene bits:  X.X.XXXX .XXXXX.X X
+// Decoded gene: 7.856726507007652
